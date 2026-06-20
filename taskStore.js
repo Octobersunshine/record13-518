@@ -16,6 +16,8 @@ function addRecord(taskName, record) {
   }
   if (record.status === "failed") {
     taskEventEmitter.emit("task_failed", { taskName, record });
+  } else if (record.status === "success") {
+    taskEventEmitter.emit("task_success", { taskName, record });
   }
 }
 
