@@ -1,0 +1,14 @@
+{
+  "name": "task-monitor",
+  "version": "1.0.0",
+  "description": "Node.js scheduled task monitor with failure alert push",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-cron": "^3.0.3"
+  }
+}
